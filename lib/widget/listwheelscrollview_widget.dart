@@ -36,15 +36,10 @@ class _ListWheelScrollViewWidgetState extends State<ListWheelScrollViewWidget> {
         children: List.generate(
           10,
           (index) => Container(
-            color: _getRandomColor(),
+            color: getRandomColor(),
           ),
         ),
       ),
     );
-  }
-
-  _getRandomColor() {
-    return Color.fromARGB(255, Random.secure().nextInt(255),
-        Random.secure().nextInt(255), Random.secure().nextInt(255));
   }
 }
