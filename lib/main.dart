@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:widget_week/util/basic.dart';
+import 'package:widget_week/widget/listwheelscrollview_widget.dart';
 import 'package:widget_week/widget/shadermask_widget.dart';
 
 void main() => runApp(MyApp());
@@ -32,6 +33,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   List<WeekWidget> list = [
     ShaderMaskWidget(),
+    ListWheelScrollViewWidget(),
   ];
 
   @override

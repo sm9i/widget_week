@@ -5,5 +5,9 @@ abstract class WeekWidget extends StatefulWidget {
 
   String subTitle();
 
-  String videoUrl() => "";
+  String videoUrl();
+
+  AppBar getAppBar() {
+    return AppBar(title: Text(title()));
+  }
 }

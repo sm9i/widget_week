@@ -19,7 +19,7 @@ class _ShaderMaskWidgetState extends State<ShaderMaskWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(widget.title())),
+      appBar: widget.getAppBar(),
       body: Center(
         child: Column(
           children: <Widget>[
