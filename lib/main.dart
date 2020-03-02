@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:widget_week/util/basic.dart';
+import 'package:widget_week/widget/colorfiltered_widget.dart';
+import 'package:widget_week/widget/datatable_widget.dart';
 import 'package:widget_week/widget/draggablescrollablesheet_widget.dart';
 import 'package:widget_week/widget/listwheelscrollview_widget.dart';
 import 'package:widget_week/widget/shadermask_widget.dart';
@@ -36,6 +38,8 @@ class _MyHomePageState extends State<MyHomePage> {
     ShaderMaskWidget(),
     ListWheelScrollViewWidget(),
     DraggableScrollableSheetWidget(),
+    ColorFilteredWidget(),
+    DataTableWidget(),
   ];
 
   @override
@@ -61,4 +65,4 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 Future goPage(Widget child) =>
-    globalKey.currentState.push(new MaterialPageRoute(builder: (_) => child));
+    globalKey.currentState.push(new MaterialPageRoute(builder: (_) => child),);
