@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:widget_week/util/basic.dart';
+import 'package:widget_week/widget/animatedcrossfade_widget.dart';
 import 'package:widget_week/widget/colorfiltered_widget.dart';
 import 'package:widget_week/widget/datatable_widget.dart';
 import 'package:widget_week/widget/draggablescrollablesheet_widget.dart';
@@ -40,6 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
     DraggableScrollableSheetWidget(),
     ColorFilteredWidget(),
     DataTableWidget(),
+    AnimatedCrossFadeWidget(),
   ];
 
   @override
