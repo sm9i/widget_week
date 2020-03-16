@@ -7,6 +7,9 @@ import 'package:widget_week/widget/draggablescrollablesheet_widget.dart';
 import 'package:widget_week/widget/listwheelscrollview_widget.dart';
 import 'package:widget_week/widget/shadermask_widget.dart';
 
+import 'widget/reorderablelistview_widget.dart';
+
+
 void main() => runApp(MyApp());
 
 GlobalKey<NavigatorState> globalKey = new GlobalKey();
@@ -42,6 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
     ColorFilteredWidget(),
     DataTableWidget(),
     AnimatedCrossFadeWidget(),
+    ReorderableListViewWidget(),
   ];
 
   @override
@@ -66,5 +70,6 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-Future goPage(Widget child) =>
-    globalKey.currentState.push(new MaterialPageRoute(builder: (_) => child),);
+Future goPage(Widget child) => globalKey.currentState.push(
+      new MaterialPageRoute(builder: (_) => child),
+    );
