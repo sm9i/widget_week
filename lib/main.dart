@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:widget_week/util/basic.dart';
 import 'package:widget_week/widget/animatedcrossfade_widget.dart';
+import 'package:widget_week/widget/clippath_widget.dart';
 import 'package:widget_week/widget/colorfiltered_widget.dart';
 import 'package:widget_week/widget/datatable_widget.dart';
 import 'package:widget_week/widget/draggablescrollablesheet_widget.dart';
@@ -8,7 +9,6 @@ import 'package:widget_week/widget/listwheelscrollview_widget.dart';
 import 'package:widget_week/widget/shadermask_widget.dart';
 
 import 'widget/reorderablelistview_widget.dart';
-
 
 void main() => runApp(MyApp());
 
@@ -46,6 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
     DataTableWidget(),
     AnimatedCrossFadeWidget(),
     ReorderableListViewWidget(),
+    ClipPathWidget(),
   ];
 
   @override
